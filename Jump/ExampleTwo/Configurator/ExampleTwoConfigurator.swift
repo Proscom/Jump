@@ -23,8 +23,6 @@ class ExampleTwoConfigurator: DependencyConfigurator {
         presenter.view = view
         presenter.router = router
         
-        router.transitionHandler = view
-        //router
-        
+        router.transitionHandler = view        
     }
 }
