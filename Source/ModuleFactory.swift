@@ -18,7 +18,7 @@ public class ModuleFactory: Factory {
     private(set) var storyboard: UIStoryboard!
     private(set) var identifier: String!
     
-    init(storyboard: UIStoryboard, identifier: String) {
+    public init(storyboard: UIStoryboard, identifier: String) {
         self.storyboard = storyboard
         self.identifier = identifier
     }
