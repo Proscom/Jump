@@ -10,6 +10,13 @@
 		94451C6C1E21CEF3005286CC /* Jump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94451C621E21CEF3005286CC /* Jump.framework */; };
 		94451C711E21CEF3005286CC /* JumpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94451C701E21CEF3005286CC /* JumpTests.swift */; };
 		94451C731E21CEF3005286CC /* Jump.h in Headers */ = {isa = PBXBuildFile; fileRef = 94451C651E21CEF3005286CC /* Jump.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94451C801E21CF8E005286CC /* DependencyConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94451C7C1E21CF8E005286CC /* DependencyConfigurator.swift */; };
+		94451C811E21CF8E005286CC /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94451C7D1E21CF8E005286CC /* ModuleFactory.swift */; };
+		94451C821E21CF8E005286CC /* ModuleRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94451C7E1E21CF8E005286CC /* ModuleRules.swift */; };
+		94451C831E21CF8E005286CC /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94451C7F1E21CF8E005286CC /* TransitionHandler.swift */; };
+		94451C871E21CF95005286CC /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94451C841E21CF95005286CC /* BasePresenter.swift */; };
+		94451C881E21CF95005286CC /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94451C851E21CF95005286CC /* BaseRouter.swift */; };
+		94451C891E21CF95005286CC /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94451C861E21CF95005286CC /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 		94451C6B1E21CEF3005286CC /* JumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94451C701E21CEF3005286CC /* JumpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpTests.swift; sourceTree = "<group>"; };
 		94451C721E21CEF3005286CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94451C7C1E21CF8E005286CC /* DependencyConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DependencyConfigurator.swift; path = Source/DependencyConfigurator.swift; sourceTree = SOURCE_ROOT; };
+		94451C7D1E21CF8E005286CC /* ModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModuleFactory.swift; path = Source/ModuleFactory.swift; sourceTree = SOURCE_ROOT; };
+		94451C7E1E21CF8E005286CC /* ModuleRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModuleRules.swift; path = Source/ModuleRules.swift; sourceTree = SOURCE_ROOT; };
+		94451C7F1E21CF8E005286CC /* TransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionHandler.swift; path = Source/TransitionHandler.swift; sourceTree = SOURCE_ROOT; };
+		94451C841E21CF95005286CC /* BasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasePresenter.swift; path = Source/Base/BasePresenter.swift; sourceTree = SOURCE_ROOT; };
+		94451C851E21CF95005286CC /* BaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseRouter.swift; path = Source/Base/BaseRouter.swift; sourceTree = SOURCE_ROOT; };
+		94451C861E21CF95005286CC /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseView.swift; path = Source/Base/BaseView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +85,13 @@
 		94451C641E21CEF3005286CC /* Jump */ = {
 			isa = PBXGroup;
 			children = (
+				94451C841E21CF95005286CC /* BasePresenter.swift */,
+				94451C851E21CF95005286CC /* BaseRouter.swift */,
+				94451C861E21CF95005286CC /* BaseView.swift */,
+				94451C7C1E21CF8E005286CC /* DependencyConfigurator.swift */,
+				94451C7D1E21CF8E005286CC /* ModuleFactory.swift */,
+				94451C7E1E21CF8E005286CC /* ModuleRules.swift */,
+				94451C7F1E21CF8E005286CC /* TransitionHandler.swift */,
 				94451C651E21CEF3005286CC /* Jump.h */,
 				94451C661E21CEF3005286CC /* Info.plist */,
 			);
@@ -149,6 +170,7 @@
 					94451C611E21CEF3005286CC = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LXCS739P9Z;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					94451C6A1E21CEF3005286CC = {
@@ -198,6 +220,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94451C811E21CF8E005286CC /* ModuleFactory.swift in Sources */,
+				94451C881E21CF95005286CC /* BaseRouter.swift in Sources */,
+				94451C871E21CF95005286CC /* BasePresenter.swift in Sources */,
+				94451C821E21CF8E005286CC /* ModuleRules.swift in Sources */,
+				94451C891E21CF95005286CC /* BaseView.swift in Sources */,
+				94451C801E21CF8E005286CC /* DependencyConfigurator.swift in Sources */,
+				94451C831E21CF8E005286CC /* TransitionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +351,7 @@
 		94451C771E21CEF3005286CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LXCS739P9Z;
@@ -334,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ru.proscom.Jump;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +372,7 @@
 		94451C781E21CEF3005286CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LXCS739P9Z;
@@ -360,6 +392,7 @@
 		94451C7A1E21CEF3005286CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = LXCS739P9Z;
 				INFOPLIST_FILE = JumpTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +405,7 @@
 		94451C7B1E21CEF3005286CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = LXCS739P9Z;
 				INFOPLIST_FILE = JumpTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +434,7 @@
 				94451C781E21CEF3005286CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94451C791E21CEF3005286CC /* Build configuration list for PBXNativeTarget "JumpTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +443,7 @@
 				94451C7B1E21CEF3005286CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
