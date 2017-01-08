@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'Jump'
-  s.version  = '1.0.5'
+  s.version  = '1.0.6'
   s.license  = 'MIT'
   s.summary  = 'clean architecture for swift projects'
   s.homepage = 'https://github.com/Proscom/Jump.git'

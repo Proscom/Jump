@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol BasePresenter: class {
+public protocol BasePresenter: class {
     func configureModule()
 
 }
@@ -16,7 +16,7 @@ protocol BasePresenter: class {
 
 private var presenterKey: UInt8 = 0
 
-extension UIViewController {
+public extension UIViewController {
         
     var basePresenter: BasePresenter {
         set(value) {

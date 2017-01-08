@@ -8,10 +8,10 @@
 
 import Foundation
 
-protocol BaseViewInput: class {
+public protocol BaseViewInput: class {
     func setupInitialState()
 }
 
-protocol BaseViewOutput: class {
+public protocol BaseViewOutput: class {
     func viewIsReady()    
 }

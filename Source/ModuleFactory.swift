@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol Factory {
+public protocol Factory {
     func instantiateModuleTransitionHandler() -> TransitionHandler
 }
 
 
-class ModuleFactory: Factory {
+public class ModuleFactory: Factory {
     
     private(set) var storyboard: UIStoryboard!
     private(set) var identifier: String!
@@ -23,7 +23,7 @@ class ModuleFactory: Factory {
         self.identifier = identifier
     }
     
-    internal func instantiateModuleTransitionHandler() -> TransitionHandler {
+    public func instantiateModuleTransitionHandler() -> TransitionHandler {
         return storyboard.instantiateViewController(withIdentifier: identifier)
     }
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol BaseRouterInput: class {
+public protocol BaseRouterInput: class {
     
 }

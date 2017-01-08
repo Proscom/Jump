@@ -8,9 +8,9 @@
 
 import UIKit
 
-typealias ModuleTransitionBlock = (_ sourceModuleTransitionHandler: TransitionHandler, _ destinationModuleTransitionHandler: TransitionHandler) -> Void
+public typealias ModuleTransitionBlock = (_ sourceModuleTransitionHandler: TransitionHandler, _ destinationModuleTransitionHandler: TransitionHandler) -> Void
 
-protocol TransitionHandler: class {
+public protocol TransitionHandler: class {
     
     func openModule(using factory: Factory, with transitionBlock: ModuleTransitionBlock!) -> Moduling
 }
@@ -18,7 +18,7 @@ protocol TransitionHandler: class {
 
 extension UIViewController: TransitionHandler {
     
-    func openModule(using factory: Factory, with transitionBlock: ModuleTransitionBlock!) -> Moduling {
+    public func openModule(using factory: Factory, with transitionBlock: ModuleTransitionBlock!) -> Moduling {
         let sourceModuleTransitionHandler = self
         let destinationModuleTransitionHandler = factory.instantiateModuleTransitionHandler() as! UIViewController
         

@@ -8,13 +8,13 @@
 
 import Foundation
 
-typealias ModuleRulesBlock = (_ presenter: BasePresenter?) -> Void
+public typealias ModuleRulesBlock = (_ presenter: BasePresenter?) -> Void
 
-protocol Moduling {
+public protocol Moduling {
     func perform(moduleInput: @escaping ModuleRulesBlock)
 }
 
-class ModuleRules: Moduling {
+public class ModuleRules: Moduling {
     
     private(set) var presenter: BasePresenter?
     
@@ -22,7 +22,7 @@ class ModuleRules: Moduling {
         self.presenter = presenter
     }
     
-    func perform(moduleInput: @escaping ModuleRulesBlock) {
+    public func perform(moduleInput: @escaping ModuleRulesBlock) {
         moduleInput(self.presenter)
     }
 }

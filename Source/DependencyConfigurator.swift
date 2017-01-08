@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol DependencyConfigurator {
+public protocol DependencyConfigurator {
     associatedtype View
     associatedtype Presenter
     associatedtype Router
