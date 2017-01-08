@@ -8,6 +8,8 @@
 
 import UIKit
 
+import JumpFramework
+
 class ExampleTwoViewController: UIViewController {
     
     var presenter: ExampleTwoViewOutput! {
