@@ -18,12 +18,12 @@ private var presenterKey: UInt8 = 0
 
 public extension UIViewController {
         
-    var basePresenter: BasePresenter {
+    var basePresenter: BasePresenter? {
         set(value) {
             objc_setAssociatedObject(self, &presenterKey, value, .OBJC_ASSOCIATION_RETAIN)
         }
         get {
-            return objc_getAssociatedObject(self, &presenterKey) as! BasePresenter
+            return objc_getAssociatedObject(self, &presenterKey) as? BasePresenter
         }
     }
 }
