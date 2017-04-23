@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.platform     = :ios, "8.0"
   s.ios.deployment_target = "8.0"
-
+  s.preserve_paths = 'cli/SuperPuperDuperCodegen'
   s.source_files = 'Source/**/*.swift'
 end
