@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol BaseRouterInput: class {
-    
+    var transitionHandler: TransitionHandler!
 }
